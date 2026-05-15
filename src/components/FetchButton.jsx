@@ -1,9 +1,11 @@
-// Step 1: Accept `fetchJoke` as a prop
+// Step 1: Accept `onClick` as a prop
 
-const FetchButton = ({ fetchJoke }) => {
+const FetchButton = ({ onClick }) => {
   return (
-    // Step 2: Add an onClick event that calls `fetchJoke`
-    <button className="fetch-button">Get a New Joke</button>
+    // Step 2: Add an onClick event that calls the handler
+    <button className="fetch-button" onClick={onClick}>
+      Get a New Joke
+    </button>
   )
 }
 
